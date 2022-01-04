@@ -3,11 +3,14 @@
 
 var response = document.querySelector(".response");
 var showGuess = document.querySelector(".show-guess");
-var num = Number(prompt("Guess a number between 1-25. :)"));
+var num = Number(prompt("Guess a number between 1-25 😏"));
+// reset the page after guess
+var reset = document.querySelector(".reset")
+
 
 function guessNumber(name, num) {
-  var randomNumber = Math.floor(Math.random() * 26); // This will produce a number between 1 and 100 - this line is error free :)
-
+  var randomNumber = Math.floor(Math.random() * 26); 
+  // This will produce a number between 1 and 100 - this line is error free :)
   if (num > 25) {
     response.innerText = "We need a number between 1 and 25.";
     return;
@@ -17,6 +20,7 @@ function guessNumber(name, num) {
   }
 
   showGuess.innerText = num;
+  
 
   if (num === randomNumber) {
     response.innerText = `Hey, ${name}, you totally guessed the number! Must be your lucky day.`;
@@ -27,6 +31,7 @@ function guessNumber(name, num) {
   } else {
     response.innerText = `That's not a number, ${name}!`;
   }
+  
 }
 
 guessNumber("Reese", num);
