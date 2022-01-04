@@ -51,21 +51,26 @@
    border-radius: 30px;
  }
  
- /*
- .run {
+ 
+ .reset {
    padding: 0.4em;
    background-color: white;
    color: #55b9f3;
-   font-size: 2em;
+   font-size: 1.3em;
    font-weight: bold;
-   border-radius: 20px;
+   border-radius: 10px;
    background: white;
    box-shadow: 20px 20px 60px #489dcf, -20px -20px 60px #62d5ff;
    cursor: pointer;
  }
+
+ .reset a{
+  color: #55b9f3;
+  text-decoration: none;
+ }
  
- button:hover {
+  .reset a:hover {
    color: #048af7;
  }
- */
+ 
  
