@@ -1,11 +1,12 @@
 // Revisit this to add a restart this project with a button
 // I added a button in HTML & CSS and will add an event listener to run the program, I hope.
+// Revisited and added restart button in HTML an CSS only.  It is clunky but it works.
 
 var response = document.querySelector(".response");
 var showGuess = document.querySelector(".show-guess");
 var num = Number(prompt("Guess a number between 1-25 😏"));
 // reset the page after guess
-var reset = document.querySelector(".reset")
+var reset = document.querySelector(".reset");
 
 
 function guessNumber(name, num) {
@@ -20,7 +21,7 @@ function guessNumber(name, num) {
   }
 
   showGuess.innerText = num;
-  
+
 
   if (num === randomNumber) {
     response.innerText = `Hey, ${name}, you totally guessed the number! Must be your lucky day.`;
